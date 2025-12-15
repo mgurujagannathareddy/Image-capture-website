@@ -10,11 +10,17 @@
 
     <h1>Camera Capture</h1>
 
-    <video id="video" autoplay></video>
+    <label for="cameraSelect">Select Camera</label>
+    <select id="cameraSelect">
+        <option value="user">Front Camera (Selfie)</option>
+        <option value="environment">Back Camera</option>
+    </select>
+
+    <video id="video" autoplay playsinline></video>
 
     <button onclick="capturePhoto()">Capture Photo</button>
 
-    <img id="photo">
+    <img id="photo" alt="Captured Image">
 
     <canvas id="canvas"></canvas>
 
